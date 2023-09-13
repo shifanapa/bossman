@@ -12,11 +12,11 @@ module.exports = {
         'secondary':'#0D0D0D',
       },
       screens: {
-        'xm':'320px',
-        'sm': '640px',   // Custom small breakpoint at 640 pixels
-        'md': '768px',   // Custom medium breakpoint at 768 pixels
-        'lg': '1024px',  // Custom large breakpoint at 1024 pixels
-        'xl': '1280px',  // Custom extra-large breakpoint at 1280 pixels
+        'bigscreen': {'min': '1535px'},
+        'phone': {'max': '600px'},
+        'ipad': {'max': '800px'},
+        'bigphone': {'max': '500px'},
+        'smallphone': {'max': '400px'},
         
       }, 
     },

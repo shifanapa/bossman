@@ -538,12 +538,6 @@ video {
   width: 100%;
 }
 
-@media (min-width: 320px) {
-  .container {
-    max-width: 320px;
-  }
-}
-
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -565,6 +559,12 @@ video {
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+}
+
+@media (min-width: 1535px) {
+  .container {
+    max-width: 1535px;
   }
 }
 
@@ -1330,40 +1330,6 @@ element {
   color: rgb(13 13 13 / var(--tw-text-opacity));
 }
 
-@media (max-width: 375px) {
-  .max-\[375px\]\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .max-\[375px\]\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-}
-
-@media (min-width: 320px) {
-  .xm\:block {
-    display: block;
-  }
-
-  .xm\:flex {
-    display: flex;
-  }
-
-  .xm\:hidden {
-    display: none;
-  }
-
-  .xm\:flex-none {
-    flex: none;
-  }
-
-  .xm\:flex-wrap {
-    flex-wrap: wrap;
-  }
-}
-
 @media (min-width: 640px) {
   .sm\:hidden {
     display: none;
@@ -1371,10 +1337,6 @@ element {
 }
 
 @media (min-width: 1280px) {
-  .xl\:block {
-    display: block;
-  }
-
   .xl\:hidden {
     display: none;
   }
