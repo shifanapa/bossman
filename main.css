@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --primary-color: #DEB99E;
+    --secondary-color: #0D0D0D;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.013);
+    backdrop-filter: blur(10px);
+    z-index: 9999999;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+footer{
+    overflow: hidden;
+}
+
+.main-heading,.secondary-heading {
+    letter-spacing: 6px;
+}
+
+.explore_more button{
+    width: 12rem;
+    transition:all 200ms ease-in-out;
+}
+
+.explore_more button img{
+    transition: all .2s ease-in-out;
+    opacity:0;
+}
+
+.explore_more button:hover{
+    width: calc(6.25rem + 8.25rem);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.explore_more button:hover .explore_arrow{
+    opacity: 1;
+}
+
+.work{
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
+.new{
+    z-index: 999;
+    transition: all .3s ease-in-out;
+}
+
+.new::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, hsla(0, 0%, 100%, 0), #000);
+    opacity: 1;
+    pointer-events: none;
+    transition: .3s;
+    z-index: 99;
+}
+
+.new:hover::before {
+    opacity: 0;
+}
+
+.new:hover{
+    filter: grayscale(0);
+}
+
+.man{
+    z-index: 999;
+    transition: all .3s ease-in-out;
+}
+
+.man::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #000);
+    opacity: 1;
+    pointer-events: none;
+    transition: .3s;
+    z-index: 99;
+}
+
+.man:hover::before {
+    opacity: 0;
+}
+
+.man:hover{
+    filter: grayscale(0);
+}
+
+.happy{
+    z-index: 999;
+    transition: all .3s ease-in-out;
+}
+
+.happy::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    opacity: 1;
+    pointer-events: none;
+    transition: .3s;
+    z-index: 99;
+}
+
+.happy:hover::before {
+    opacity: 0;
+}
+
+.happy:hover{
+    filter: grayscale(0);
+}
+element {
+    position: relative;
+    bottom: 96rem;
+    left: 19rem;
+  }
